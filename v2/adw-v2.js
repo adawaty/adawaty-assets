@@ -1,8 +1,8 @@
 (function(){var d=document,h=d.documentElement,rm=matchMedia("(prefers-reduced-motion: reduce)").matches;if(!rm&&"IntersectionObserver"in window)h.classList.add("adw-js");
 function init(){var b=d.body;if(!b||d.getElementById("adw-pg"))return;var pg=d.createElement("div");pg.id="adw-pg";b.appendChild(pg);
 var cta=d.querySelector(".vzy-header .btn-1")||d.querySelector('a[href="/contact"]'),wa=d.querySelector('a[href*="wa.me"]'),mb=d.createElement("div");mb.id="adw-mb";
-var p=d.createElement("a");p.className="p";p.href=cta?cta.getAttribute("href"):"/contact";p.textContent=cta&&cta.textContent.trim()?cta.textContent.trim():"Contact";mb.appendChild(p);
-if(wa){var s=d.createElement("a");s.className="s";s.href=wa.href;s.target="_blank";s.rel="noopener";s.textContent="WhatsApp";mb.appendChild(s)}b.appendChild(mb);
+var p=d.createElement("a");p.className="p";p.href="https://wa.me/13393991355";p.target="_blank";p.rel="noopener";p.textContent="Start on WhatsApp";mb.appendChild(p);
+if(!/^\/services\/?$/i.test(location.pathname)){var s=d.createElement("a");s.className="s";s.href="/services";s.textContent="Explore services";mb.appendChild(s)}b.appendChild(mb);
 var tk=0;function upd(){tk=0;var y=scrollY,m=h.scrollHeight-innerHeight;pg.style.transform="scaleX("+(m>0?y/m:0)+")";h.classList.toggle("adw-sc",y>24);mb.classList.toggle("on",y>innerHeight*.6)}
 addEventListener("scroll",function(){if(!tk){tk=1;requestAnimationFrame(upd)}},{passive:true});upd();
 if(h.classList.contains("adw-js")){var els=d.querySelectorAll(".card-header,.card,.banner-text>section,.hero-box .inner-content,.list-box .inner-content,.footer-card");var io=new IntersectionObserver(function(es){es.forEach(function(e){if(e.isIntersecting){e.target.classList.add("adw-in");io.unobserve(e.target)}})},{rootMargin:"0px 0px -8% 0px",threshold:.08});
@@ -166,3 +166,94 @@ function start(){mount();try{new MutationObserver(sched).observe(d.body,{childLi
 if(d.readyState!="loading")setTimeout(start,60);else d.addEventListener("DOMContentLoaded",function(){setTimeout(start,60)});
 addEventListener("load",function(){setTimeout(mount,400);setTimeout(mount,2000)});addEventListener("popstate",sched);
 }catch(e){window.console&&console.warn("adw21",e)}})();
+/* Adawaty v2.2: how it starts, prove it, infographics, product mockups, who fits */
+(function(){try{
+var W=window,d=document,H=d.documentElement;if(W.__adw22)return;W.__adw22=1;
+var RM=W.matchMedia&&matchMedia("(prefers-reduced-motion: reduce)").matches,WA="https://wa.me/13393991355",IMG="https://cdn.jsdelivr.net/gh/adawaty/adawaty-assets@main/img/";
+var ALT={
+"prove-it-then-scale":["Infographic: \"Baseline, pilot, scale.\" Three numbered steps. 1, Baseline: we record how your process works today, so improvement is measured, not guessed. 2, Pilot: your package goes live in 5 to 30 days and you use it with your real team before anything expands. 3, Scale: we expand only what beats the baseline. Guarantee: on time, or it's on us, miss go-live and your first 2 months of care are free.",3200,2526],
+"ecosystem":["Diagram: \"One ecosystem.\" Adawaty at the centre, connected to four products. Campus, a student information system, best for schools, institutes and universities. Learn, an e-learning platform, best for training centers, academies and corporate training. Sites, websites designed, built, hosted and grown, best for any organization that needs a website that performs. Bio, one link for everything you do, best for founders, teams and professionals. Campus syncs with Learn, and all four share your brand, your domain and your data.",3200,3092],
+"campus-mockup":["Adawaty Campus student information system dashboard on a laptop, dark interface with cyan highlights, showing admissions pipeline, attendance, grades and today's schedule with sample data.",3200,2000],
+"learn-mockup":["Adawaty Learn course player on a laptop with lesson video and course outline, and a phone showing a lesson quiz and progress, using a sample academy.",3200,2000],
+"sites-mockup":["A sample clinic website built with Adawaty Sites, shown on a desktop monitor and a mobile phone, with online booking and WhatsApp buttons.",3200,2000],
+"bio-mockup":["Adawaty Bio link-in-bio page on a phone for a sample profile, with WhatsApp, website, store, contact and email links, beside a QR code card and a click-analytics card.",3200,2000]};
+function el(t,c,x){var e=d.createElement(t);if(c)e.className=c;if(x!=null)e.textContent=x;return e}
+function path(){return(location.pathname.replace(/\/+$/,"")||"/").toLowerCase()}
+function root(){var f=d.querySelector(".v_2-footer");return f&&f.parentElement}
+function top(e,r){while(e&&e.parentElement&&e.parentElement!==r)e=e.parentElement;return e&&e.parentElement===r?e:null}
+function byHead(sel,re,sc){var hs=(sc||d).querySelectorAll(sel);for(var i=0;i<hs.length;i++)if(re.test(hs[i].textContent.replace(/\s+/g," ").trim()))return hs[i];return null}
+function img(n,cls){var a=ALT[n],i=el("img",cls||"");i.src=IMG+n+".webp";i.alt=a[0];i.width=a[1];i.height=a[2];i.loading="lazy";i.decoding="async";return i}
+var io=null;function reveal(n){if(RM||!("IntersectionObserver"in W)||!H.classList.contains("adw-js")||n.__rv)return;n.__rv=1;var r=n.getBoundingClientRect();if(r.top<innerHeight&&r.bottom>0)return;
+if(!io)io=new IntersectionObserver(function(es){es.forEach(function(e){if(e.isIntersecting){e.target.classList.add("adw-in");io.unobserve(e.target)}})},{rootMargin:"0px 0px -8% 0px",threshold:.05});n.classList.add("adw-r");io.observe(n);setTimeout(function(){n.classList.add("adw-in")},6000)}
+function head(w,eb,h,sub){if(eb)w.appendChild(el("div","adw-eb",eb));var x=el("h2","adw-h",h);w.appendChild(x);if(sub)w.appendChild(el("p","adw-sub",sub));return x}
+function wa(a,t){a.href=WA;a.target="_blank";a.rel="noopener";if(t)a.textContent=t;return a}
+
+/* 1. How it starts (/services) */
+function starts(){var S=el("section","adw-x adw-hs");S.id="adw-starts";var w=el("div","adw-w");S.appendChild(w);var h=head(w,"Getting started","How it starts");h.id="adw-hs-t";S.setAttribute("aria-labelledby",h.id);
+var o=el("ol","adw-hs-l");["Talk to us on WhatsApp — we map your biggest time and cost leaks.","Get a written scope, milestones, pricing, and a go-live date.","Go live in 5 to 30 days, with support after launch."].forEach(function(t,i){var li=el("li"),a=wa(el("a","adw-hs-i"));a.appendChild(el("span","adw-hs-n","0"+(i+1)));a.appendChild(el("span","adw-hs-x",t));a.appendChild(el("span","adw-hs-ar","\u2192"));a.lastChild.setAttribute("aria-hidden","true");li.appendChild(a);o.appendChild(li)});w.appendChild(o);
+var c=el("div","adw-cta");c.appendChild(wa(el("a","adw-b adw-b1"),"Start on WhatsApp"));w.appendChild(c);return S}
+
+/* 2. Prove it, then scale + infographic (/approach) */
+function prove(){var g=el("div","adw-grp");g.id="adw-prove";var S=el("section","adw-x adw-pv"),w=el("div","adw-w");S.appendChild(w);var h=head(w,"Our method","Prove it, then scale");h.id="adw-pv-t";S.setAttribute("aria-labelledby",h.id);
+var o=el("ol","adw-pv-l");["Baseline first — we record how your process works today, so improvement is measured, not guessed.","Pilot fast — your package goes live in 5 to 30 days, and you use it with your real team before anything expands.","Scale what proves itself — we expand only what beats the baseline: faster replies, fewer manual hours, more enquiries."].forEach(function(t,i){var li=el("li","adw-pv-i"),k=t.indexOf(" — ");li.appendChild(el("span","adw-pv-n","0"+(i+1)));var p=el("p","adw-pv-x");p.appendChild(el("strong","",t.slice(0,k)));p.appendChild(d.createTextNode(t.slice(k)));li.appendChild(p);o.appendChild(li)});w.appendChild(o);
+var gl=el("p","adw-pv-g");gl.appendChild(el("strong","","On time, or it's on us"));gl.appendChild(d.createTextNode(" — miss go-live and your first 2 months of care are free."));w.appendChild(gl);g.appendChild(S);g.appendChild(info("adw-ig-prove","Baseline, pilot, scale","prove-it-then-scale"));return g}
+
+/* infographic section */
+function info(id,h,n){var S=el("section","adw-x adw-ig");S.id=id;var w=el("div","adw-w"),x=head(w,"",h);x.id=id+"-t";S.setAttribute("aria-labelledby",x.id);var f=el("figure","adw-ig-f");f.appendChild(img(n));w.appendChild(f);S.appendChild(w);return S}
+
+/* 3. product mockup swaps (HOME_ALL=1 would swap all four home product cards; brief asks only the lead Campus card) */
+var HOME_ALL=0;
+function swapImg(box,n){if(!box)return;var a=ALT[n],v=box.querySelector("video"),i=box.querySelector("img.adw-mk-i")||box.querySelector("img"),u=IMG+n+".webp";box.classList.add("adw-mk");var hi=box.classList.contains("hero-image");if(hi&&box.style.getPropertyPriority("height")!="important"){box.style.setProperty("height","auto","important");box.style.setProperty("aspect-ratio","16 / 10")}
+if(v){v.style.display="none";try{v.pause()}catch(e){}if(!i||i.className.indexOf("adw-mk-i")<0){i=img(n,"adw-mk-i");box.appendChild(i)}}
+else if(i&&i.getAttribute("src")!==u){i.removeAttribute("srcset");i.setAttribute("src",u);i.alt=a[0];i.width=a[1];i.height=a[2];i.loading="lazy";i.classList.add("adw-mk-i")}
+if(hi&&i&&i.style.getPropertyPriority("height")!="important")i.style.setProperty("height","100%","important")}
+function swaps(r,p){if(p=="/products"){[["campus","campus-mockup"],["learn","learn-mockup"],["sites","sites-mockup"],["bio","bio-mockup"]].forEach(function(x){var h=byHead("h2",new RegExp("^adawaty "+x[0]+"$","i"));if(!h)return;var b=top(h,r);b&&swapImg(b.querySelector(".hero-image"),x[1])})}
+if(p=="/"){var h=byHead("h2",/^our products$/i);if(!h)return;var b=top(h,r);if(!b)return;["campus","learn","sites","bio"].forEach(function(k,ix){if(ix&&!HOME_ALL)return;var c=byHead(".card h3",new RegExp("^adawaty "+k+"$","i"),b);c=c&&c.closest(".card");swapImg(c?c.querySelector(".card-image"):(ix?null:b.querySelector(".card-image")),k+"-mockup")})}}
+
+/* 4. Who fits Adawaty (home) — restyle the editor's single text section */
+var X={good:/^a good fit if you:?$/i,bad:/^not a fit if you:?$/i};
+function whofits(r){var h=byHead("h1,h2,h3",/^who fits adawaty\??$/i);if(!h)return;var b=top(h,r);if(!b||b.classList.contains("adw-wf-done"))return;
+var all=[].slice.call(b.querySelectorAll("h3,h4,h5,p,strong,b,li,div")),g=null,n=null;
+all.forEach(function(e){var t=e.textContent.replace(/\s+/g," ").trim();if(!g&&X.good.test(t))g=e;else if(!n&&X.bad.test(t))n=e});if(!g||!n)return;
+/* collect text lines after each sub-heading inside the body container */
+var body=g.closest("p,li,h3,h4,h5,div");var cont=body.parentElement;while(cont&&cont!==b&&!cont.contains(n))cont=cont.parentElement;if(!cont)return;
+var lines=[],MK=/^[\u2713\u2714\u2715\u2716\u2717\u00d7\u2022\u00b7*-]\s*/;(function walk(e,li){[].forEach.call(e.childNodes,function(c){if(c.nodeType==3){c.textContent.split("\n").forEach(function(s){s=s.replace(/\s+/g," ").trim();if(s)lines.push({t:s,li:li})})}else if(c.nodeType==1&&!/^(SCRIPT|STYLE)$/.test(c.tagName)){var bl=/^(P|LI|H3|H4|H5|DIV|BR|UL|OL)$/.test(c.tagName);if(bl)lines.push(0);walk(c,li||c.tagName=="LI");if(bl)lines.push(0)}})})(cont,false);
+var L=[],buf=null;lines.forEach(function(s){if(!s){if(buf)L.push(buf);buf=null}else if(buf)buf.t+=" "+s.t;else buf={t:s.t,li:s.li}});if(buf)L.push(buf);
+L.forEach(function(o){if(MK.test(o.t)){o.li=true;o.t=o.t.replace(MK,"")}o.t=o.t.trim()});L=L.filter(function(o){return o.t});
+var gi=-1,ni=-1;L.forEach(function(o,i){if(gi<0&&X.good.test(o.t))gi=i;else if(ni<0&&X.bad.test(o.t))ni=i});if(gi<0||ni<0||ni<gi)return;
+function T(a){return a.map(function(o){return o.t})}
+var good=T(L.slice(gi+1,ni)),rest=L.slice(ni+1),ci=-1,anyLi=rest.some(function(o){return o.li});
+rest.forEach(function(o,i){if(ci<0&&(anyLi?!o.li&&i>0:/^if you(’|')re not sure/i.test(o.t)))ci=i});
+var bad=T(ci<0?rest:rest.slice(0,ci)),cl=ci<0?null:T(rest.slice(ci)).join(" ");
+if(!good.length||!bad.length)return;
+var wrap=el("div","adw-wf");wrap.id="adw-wf";L.slice(0,gi).forEach(function(o){wrap.appendChild(el("p","adw-wf-in",o.t))});function col(cls,title,items,mk){var c=el("div","adw-wf-c "+cls);c.appendChild(el("h3","adw-wf-h",title));var u=el("ul","adw-wf-l");items.forEach(function(s){var li=el("li");var ic=el("span","adw-wf-ic",mk);ic.setAttribute("aria-hidden","true");li.appendChild(ic);li.appendChild(el("span","",s));u.appendChild(li)});c.appendChild(u);return c}
+var gr=el("div","adw-wf-g");gr.appendChild(col("adw-wf-yes",L[gi].t.replace(/:$/,""),good,"\u2713"));gr.appendChild(col("adw-wf-no",L[ni].t.replace(/:$/,""),bad,"\u2715"));wrap.appendChild(gr);
+if(cl){var cp=el("p","adw-wf-cl",cl);wrap.appendChild(cp)}
+cont.classList.add("adw-wf-src");cont.setAttribute("aria-hidden","true");cont.parentNode.insertBefore(wrap,cont.nextSibling);b.classList.add("adw-wf-done","adw-wf-box")}
+
+
+/* v2.2b: services timeline move, WhatsApp CTAs */
+function inChrome(a){return !!a.closest(".vzy-header,.side-navigation-wrapper,.side-navigation,.announcement,header,nav,#adw-mb,.adw-x,.adw-top")}
+function ctas(){var as=d.querySelectorAll("a");for(var i=0;i<as.length;i++){var a=as[i];if(a.__adwc||inChrome(a))continue;var t=a.textContent.replace(/\s+/g," ").trim();
+var rq=/^request a quote$/i.test(t),kit=/^get the kit$/i.test(t);if(!rq&&!kit)continue;var tg=a.querySelector("button span,button")||a;
+if(tg.tagName=="BUTTON"&&tg.children.length==0||tg!==a)tg.textContent="Start on WhatsApp";else a.textContent="Start on WhatsApp";
+if(rq&&!/wa\.me\//.test(a.getAttribute("href")||"")){a.setAttribute("href",WA);a.setAttribute("target","_blank");a.setAttribute("rel","noopener")}a.__adwc=1}}
+function timeline(r,p){if(p!="/services")return;var im=d.querySelector('img[alt^="Timeline of Adawaty"]');if(!im)return;var s=top(im,r);if(!s)return;
+var box=im.closest(".hero-image");s.classList.add("adw-tl");if(box&&box.style.getPropertyPriority("height")!="important"){box.style.setProperty("height","auto","important");box.classList.add("adw-tl-b")}
+if(im.style.getPropertyPriority("height")!="important"){im.style.setProperty("height","auto","important");im.style.setProperty("object-fit","contain","important");if(!im.getAttribute("width")){im.setAttribute("width","3200");im.setAttribute("height","3552")}}
+var ref=d.getElementById("adw-finder-s");if(!ref||ref.parentElement!==r)ref=r.querySelector(":scope>.account-for-header");if(ref&&ref.nextElementSibling!==s)r.insertBefore(s,ref.nextSibling)}
+/* mounting */
+var N={};function get(k,f){if(!N[k])N[k]=f();return N[k]}
+function put(n,ref,after){if(!ref||!ref.parentNode)return;if(after?ref.nextSibling===n:ref.previousSibling===n)return;ref.parentNode.insertBefore(n,after?ref.nextSibling:ref);reveal(n)}
+var C=[
+{k:"hs",pg:"/services",mk:starts,at:function(r){var h=byHead("h2",/^campus growth kit$/i);if(h)return[top(h,r),1];var f=byHead("h2",/^questions ceos ask$/i);return[f&&top(f,r),0]}},
+{k:"pv",pg:"/approach",mk:prove,at:function(r){if(byHead("h2",/^prove it, then scale$/i)&&!d.getElementById("adw-prove"))return[null];var f=r.querySelector(":scope>.v_2-footer"),p=f&&f.previousElementSibling;while(p&&!(p.classList.contains("box")&&/let.s build what.s next/i.test(p.textContent)))p=p.previousElementSibling;if(p)return[p,0];var a=r.querySelector(":scope>.account-for-header");a=a&&a.nextElementSibling;while(a&&!a.classList.contains("box"))a=a.nextElementSibling;return[a,1]}},
+{k:"igpv",pg:"/approach",mk:function(){return info("adw-ig-prove2","Baseline, pilot, scale","prove-it-then-scale")},at:function(r){if(d.getElementById("adw-prove"))return[null];var h=byHead("h2",/^prove it, then scale$/i);return[h&&top(h,r),1]}},
+{k:"igeco",pg:"/products",mk:function(){return info("adw-ig-eco","One ecosystem","ecosystem")},at:function(r){var e=d.getElementById("adw-ecosystem");return[e&&e.parentElement===r?e:null,1]}}];
+function mount(){try{var r=root(),p=path();C.forEach(function(c){var n=N[c.k];if(c.pg!=p){if(n&&n.parentNode)n.parentNode.removeChild(n);return}if(!r||(n&&n.isConnected&&(c.k!="igeco"||n.previousElementSibling&&n.previousElementSibling.id=="adw-ecosystem")))return;var a=c.at(r);if(a[0])put(get(c.k,c.mk),a[0],a[1])});
+if(r){swaps(r,p);timeline(r,p);if(p=="/")whofits(r)}ctas();}catch(e){W.console&&console.warn("adw22",e)}}
+var tm=0;function sched(){if(!tm)tm=setTimeout(function(){tm=0;mount()},150)}
+function start(){mount();try{new MutationObserver(sched).observe(d.body,{childList:true,subtree:true})}catch(e){}}
+if(d.readyState!="loading")setTimeout(start,90);else d.addEventListener("DOMContentLoaded",function(){setTimeout(start,90)});
+addEventListener("load",function(){setTimeout(mount,500);setTimeout(mount,2200)});addEventListener("popstate",sched);
+}catch(e){window.console&&console.warn("adw22",e)}})();
