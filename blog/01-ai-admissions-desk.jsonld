@@ -1,0 +1,115 @@
+{
+  "@context": "https://schema.org",
+  "@graph": [
+    {
+      "@type": "Article",
+      "@id": "https://adawaty.net/blog/ai-admissions-desk-for-schools#article",
+      "headline": "AI Admissions Desk for Schools",
+      "description": "An AI admissions assistant that answers every applicant in seconds, 24/7, in Arabic and English, on web, WhatsApp and phone. Live in 10 days, $990.",
+      "abstract": "An AI admissions assistant for schools answers every applicant question in seconds, day and night, and logs each enquiry as a lead your team can follow up. Adawaty's AI Admissions Desk sets this up for you, live in 10 days.",
+      "url": "https://adawaty.net/blog/ai-admissions-desk-for-schools",
+      "mainEntityOfPage": "https://adawaty.net/blog/ai-admissions-desk-for-schools",
+      "inLanguage": "en",
+      "keywords": [
+        "AI admissions assistant for schools",
+        "AI chatbot for school admissions",
+        "24/7 admissions enquiry assistant in Arabic and English",
+        "WhatsApp admissions bot for universities",
+        "how to answer applicant enquiries after hours"
+      ],
+      "author": {
+        "@id": "https://adawaty.net/#org"
+      },
+      "publisher": {
+        "@id": "https://adawaty.net/#org"
+      },
+      "about": {
+        "@type": "Service",
+        "name": "AI Admissions Desk",
+        "provider": {
+          "@id": "https://adawaty.net/#org"
+        }
+      }
+    },
+    {
+      "@type": "FAQPage",
+      "@id": "https://adawaty.net/blog/ai-admissions-desk-for-schools#faq",
+      "mainEntity": [
+        {
+          "@type": "Question",
+          "name": "How long does it take to set up an AI admissions assistant?",
+          "acceptedAnswer": {
+            "@type": "Answer",
+            "text": "With Adawaty's AI Admissions Desk, you are live in 10 days. If we miss the date, your first 2 months of care are free."
+          }
+        },
+        {
+          "@type": "Question",
+          "name": "How much does the AI Admissions Desk cost?",
+          "acceptedAnswer": {
+            "@type": "Answer",
+            "text": "$990 setup plus $149 per month for care. You pay 50% to start and 50% at go-live."
+          }
+        },
+        {
+          "@type": "Question",
+          "name": "Will the AI replace our admissions staff?",
+          "acceptedAnswer": {
+            "@type": "Answer",
+            "text": "No. It handles the first reply and repeat questions around the clock, then passes each enquiry to your team as a logged lead."
+          }
+        },
+        {
+          "@type": "Question",
+          "name": "Can it answer families on WhatsApp in Arabic?",
+          "acceptedAnswer": {
+            "@type": "Answer",
+            "text": "Yes. It works on web, WhatsApp and phone, in Arabic and English."
+          }
+        },
+        {
+          "@type": "Question",
+          "name": "Do we need Adawaty Campus to use it?",
+          "acceptedAnswer": {
+            "@type": "Answer",
+            "text": "Enquiries are logged as leads in your Campus pipeline. Talk to us on WhatsApp and we will confirm the right setup for your school."
+          }
+        }
+      ]
+    },
+    {
+      "@type": "Organization",
+      "@id": "https://adawaty.net/#org",
+      "name": "Adawaty LLC",
+      "url": "https://adawaty.net/",
+      "email": "hello@adawaty.net",
+      "telephone": "+1-339-399-1355",
+      "address": [
+        {
+          "@type": "PostalAddress",
+          "streetAddress": "30 N Gould St Ste R",
+          "addressLocality": "Sheridan",
+          "addressRegion": "WY",
+          "postalCode": "82801",
+          "addressCountry": "US"
+        },
+        {
+          "@type": "PostalAddress",
+          "streetAddress": "Ivánska cesta 30/D, Aircraft Building",
+          "addressLocality": "Bratislava",
+          "postalCode": "821 04",
+          "addressCountry": "SK"
+        }
+      ],
+      "knowsLanguage": [
+        "en",
+        "ar"
+      ],
+      "areaServed": [
+        "United States",
+        "Europe",
+        "Middle East and North Africa"
+      ]
+    }
+  ]
+}

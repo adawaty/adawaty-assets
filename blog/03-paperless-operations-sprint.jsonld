@@ -1,0 +1,115 @@
+{
+  "@context": "https://schema.org",
+  "@graph": [
+    {
+      "@type": "Article",
+      "@id": "https://adawaty.net/blog/paperless-operations-sprint#article",
+      "headline": "Paperless Operations Sprint",
+      "description": "Automate 3 to 5 repetitive admin workflows end to end, with smart forms, e-signatures and approvals. Results in 3 weeks, $1,890 + $190/mo.",
+      "abstract": "To automate admin workflows without a long IT project, pick the 3 to 5 tasks your team repeats most, replace their paper and email steps with smart forms, e-signatures and approvals, and add alerts so nothing breaks silently. Adawaty's Paperless Operations Sprint does this for you, with results in 3 weeks.",
+      "url": "https://adawaty.net/blog/paperless-operations-sprint",
+      "mainEntityOfPage": "https://adawaty.net/blog/paperless-operations-sprint",
+      "inLanguage": "en",
+      "keywords": [
+        "automate admin workflows",
+        "paperless office automation for schools",
+        "replace paper forms with e-signatures and approvals",
+        "workflow automation service for HR and finance",
+        "how to go paperless in 3 weeks"
+      ],
+      "author": {
+        "@id": "https://adawaty.net/#org"
+      },
+      "publisher": {
+        "@id": "https://adawaty.net/#org"
+      },
+      "about": {
+        "@type": "Service",
+        "name": "Paperless Operations Sprint",
+        "provider": {
+          "@id": "https://adawaty.net/#org"
+        }
+      }
+    },
+    {
+      "@type": "FAQPage",
+      "@id": "https://adawaty.net/blog/paperless-operations-sprint#faq",
+      "mainEntity": [
+        {
+          "@type": "Question",
+          "name": "How long does it take to automate admin workflows?",
+          "acceptedAnswer": {
+            "@type": "Answer",
+            "text": "With the Paperless Operations Sprint, you see results in 3 weeks. If we miss the date, your first 2 months of care are free."
+          }
+        },
+        {
+          "@type": "Question",
+          "name": "How many workflows are included?",
+          "acceptedAnswer": {
+            "@type": "Answer",
+            "text": "3 to 5 repetitive workflows, automated end to end and agreed in writing before we start."
+          }
+        },
+        {
+          "@type": "Question",
+          "name": "How much does the sprint cost?",
+          "acceptedAnswer": {
+            "@type": "Answer",
+            "text": "$1,890 setup plus $190 per month for care. You pay 50% to start and 50% at go-live."
+          }
+        },
+        {
+          "@type": "Question",
+          "name": "What happens if an automation breaks?",
+          "acceptedAnswer": {
+            "@type": "Answer",
+            "text": "Error alerts flag it, the runbook explains it, and you get 30 days of support plus 30 days of free fixes after launch."
+          }
+        },
+        {
+          "@type": "Question",
+          "name": "Do we need to change our software?",
+          "acceptedAnswer": {
+            "@type": "Answer",
+            "text": "Talk to us first. We map your current process in the baseline step and agree the scope in writing."
+          }
+        }
+      ]
+    },
+    {
+      "@type": "Organization",
+      "@id": "https://adawaty.net/#org",
+      "name": "Adawaty LLC",
+      "url": "https://adawaty.net/",
+      "email": "hello@adawaty.net",
+      "telephone": "+1-339-399-1355",
+      "address": [
+        {
+          "@type": "PostalAddress",
+          "streetAddress": "30 N Gould St Ste R",
+          "addressLocality": "Sheridan",
+          "addressRegion": "WY",
+          "postalCode": "82801",
+          "addressCountry": "US"
+        },
+        {
+          "@type": "PostalAddress",
+          "streetAddress": "Ivánska cesta 30/D, Aircraft Building",
+          "addressLocality": "Bratislava",
+          "postalCode": "821 04",
+          "addressCountry": "SK"
+        }
+      ],
+      "knowsLanguage": [
+        "en",
+        "ar"
+      ],
+      "areaServed": [
+        "United States",
+        "Europe",
+        "Middle East and North Africa"
+      ]
+    }
+  ]
+}

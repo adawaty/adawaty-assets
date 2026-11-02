@@ -1,0 +1,115 @@
+{
+  "@context": "https://schema.org",
+  "@graph": [
+    {
+      "@type": "Article",
+      "@id": "https://adawaty.net/blog/academy-launch-sell-courses-in-14-days#article",
+      "headline": "Academy Launch: Selling Courses in 14 Days",
+      "description": "Your branded online academy on your own domain, payments on, first course built from your material. Selling in 14 days, $1,290 + $129/mo.",
+      "abstract": "To launch an online academy fast, you need four things working on day one: your brand on your own domain, payments switched on, one strong flagship course, and certificates that make students finish. Adawaty's Academy Launch delivers all four, selling in 14 days.",
+      "url": "https://adawaty.net/blog/academy-launch-sell-courses-in-14-days",
+      "mainEntityOfPage": "https://adawaty.net/blog/academy-launch-sell-courses-in-14-days",
+      "inLanguage": "en",
+      "keywords": [
+        "launch an online academy",
+        "how to sell online courses fast",
+        "branded course platform on your own domain",
+        "done-for-you online academy setup",
+        "Arabic and English online course platform"
+      ],
+      "author": {
+        "@id": "https://adawaty.net/#org"
+      },
+      "publisher": {
+        "@id": "https://adawaty.net/#org"
+      },
+      "about": {
+        "@type": "Service",
+        "name": "Academy Launch",
+        "provider": {
+          "@id": "https://adawaty.net/#org"
+        }
+      }
+    },
+    {
+      "@type": "FAQPage",
+      "@id": "https://adawaty.net/blog/academy-launch-sell-courses-in-14-days#faq",
+      "mainEntity": [
+        {
+          "@type": "Question",
+          "name": "How fast can I launch an online academy?",
+          "acceptedAnswer": {
+            "@type": "Answer",
+            "text": "With Academy Launch, you are selling in 14 days. If we miss the date, your first 2 months of care are free."
+          }
+        },
+        {
+          "@type": "Question",
+          "name": "How much does Academy Launch cost?",
+          "acceptedAnswer": {
+            "@type": "Answer",
+            "text": "$1,290 setup plus $129 per month for care. You pay 50% to start and 50% at go-live."
+          }
+        },
+        {
+          "@type": "Question",
+          "name": "Do I need to record a new course first?",
+          "acceptedAnswer": {
+            "@type": "Answer",
+            "text": "No. We build your first flagship course from material you already have."
+          }
+        },
+        {
+          "@type": "Question",
+          "name": "Will the academy be on my own domain?",
+          "acceptedAnswer": {
+            "@type": "Answer",
+            "text": "Yes. Your domain, your brand, with payments switched on."
+          }
+        },
+        {
+          "@type": "Question",
+          "name": "Does it include certificates?",
+          "acceptedAnswer": {
+            "@type": "Answer",
+            "text": "Yes. Certificates, progress reports and an affiliate program are included."
+          }
+        }
+      ]
+    },
+    {
+      "@type": "Organization",
+      "@id": "https://adawaty.net/#org",
+      "name": "Adawaty LLC",
+      "url": "https://adawaty.net/",
+      "email": "hello@adawaty.net",
+      "telephone": "+1-339-399-1355",
+      "address": [
+        {
+          "@type": "PostalAddress",
+          "streetAddress": "30 N Gould St Ste R",
+          "addressLocality": "Sheridan",
+          "addressRegion": "WY",
+          "postalCode": "82801",
+          "addressCountry": "US"
+        },
+        {
+          "@type": "PostalAddress",
+          "streetAddress": "Ivánska cesta 30/D, Aircraft Building",
+          "addressLocality": "Bratislava",
+          "postalCode": "821 04",
+          "addressCountry": "SK"
+        }
+      ],
+      "knowsLanguage": [
+        "en",
+        "ar"
+      ],
+      "areaServed": [
+        "United States",
+        "Europe",
+        "Middle East and North Africa"
+      ]
+    }
+  ]
+}

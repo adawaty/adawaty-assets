@@ -1,0 +1,115 @@
+{
+  "@context": "https://schema.org",
+  "@graph": [
+    {
+      "@type": "Article",
+      "@id": "https://adawaty.net/blog/store-live-in-14-days#article",
+      "headline": "Store Live in 14 Days",
+      "description": "Store, catalogue, checkout, bookings and online payments set up for you, with abandoned-cart emails on. Live in 14 days, $1,490 + $99/mo care.",
+      "abstract": "You can launch an online store in 14 days if the store, catalogue, checkout, bookings, payments and follow-up emails are set up together by one team. Adawaty's Store Live in 14 Days package does exactly that, for $1,490 + $99/mo care.",
+      "url": "https://adawaty.net/blog/store-live-in-14-days",
+      "mainEntityOfPage": "https://adawaty.net/blog/store-live-in-14-days",
+      "inLanguage": "en",
+      "keywords": [
+        "launch an online store in 14 days",
+        "done-for-you online store setup",
+        "ecommerce store with bookings and payments",
+        "abandoned cart emails setup",
+        "bilingual Arabic and English online store"
+      ],
+      "author": {
+        "@id": "https://adawaty.net/#org"
+      },
+      "publisher": {
+        "@id": "https://adawaty.net/#org"
+      },
+      "about": {
+        "@type": "Service",
+        "name": "Store Live in 14 Days",
+        "provider": {
+          "@id": "https://adawaty.net/#org"
+        }
+      }
+    },
+    {
+      "@type": "FAQPage",
+      "@id": "https://adawaty.net/blog/store-live-in-14-days#faq",
+      "mainEntity": [
+        {
+          "@type": "Question",
+          "name": "Can I really launch an online store in 14 days?",
+          "acceptedAnswer": {
+            "@type": "Answer",
+            "text": "Yes, with a fixed scope. Store Live in 14 Days is live in 14 days, and if we miss the date your first 2 months of care are free."
+          }
+        },
+        {
+          "@type": "Question",
+          "name": "How much does it cost?",
+          "acceptedAnswer": {
+            "@type": "Answer",
+            "text": "$1,490 setup plus $99 per month for care. You pay 50% to start and 50% at go-live."
+          }
+        },
+        {
+          "@type": "Question",
+          "name": "Can customers book appointments as well as buy?",
+          "acceptedAnswer": {
+            "@type": "Answer",
+            "text": "Yes. Bookings and online payments are connected as part of the package."
+          }
+        },
+        {
+          "@type": "Question",
+          "name": "Are abandoned-cart emails included?",
+          "acceptedAnswer": {
+            "@type": "Answer",
+            "text": "Yes. Abandoned-cart and order emails are switched on."
+          }
+        },
+        {
+          "@type": "Question",
+          "name": "What do I need to provide?",
+          "acceptedAnswer": {
+            "@type": "Answer",
+            "text": "Your products or services, prices and photos. Talk to us on WhatsApp and we'll send a short checklist."
+          }
+        }
+      ]
+    },
+    {
+      "@type": "Organization",
+      "@id": "https://adawaty.net/#org",
+      "name": "Adawaty LLC",
+      "url": "https://adawaty.net/",
+      "email": "hello@adawaty.net",
+      "telephone": "+1-339-399-1355",
+      "address": [
+        {
+          "@type": "PostalAddress",
+          "streetAddress": "30 N Gould St Ste R",
+          "addressLocality": "Sheridan",
+          "addressRegion": "WY",
+          "postalCode": "82801",
+          "addressCountry": "US"
+        },
+        {
+          "@type": "PostalAddress",
+          "streetAddress": "Ivánska cesta 30/D, Aircraft Building",
+          "addressLocality": "Bratislava",
+          "postalCode": "821 04",
+          "addressCountry": "SK"
+        }
+      ],
+      "knowsLanguage": [
+        "en",
+        "ar"
+      ],
+      "areaServed": [
+        "United States",
+        "Europe",
+        "Middle East and North Africa"
+      ]
+    }
+  ]
+}

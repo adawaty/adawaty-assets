@@ -1,0 +1,115 @@
+{
+  "@context": "https://schema.org",
+  "@graph": [
+    {
+      "@type": "Article",
+      "@id": "https://adawaty.net/blog/leads-on-autopilot-search-visibility#article",
+      "headline": "Leads on Autopilot: Search Visibility",
+      "description": "Qualified B2B prospects in your inbox every week, plus visibility on Google and AI answers. First leads in 10 days, $290 setup + $390/mo.",
+      "abstract": "A B2B lead generation service should do two jobs: put qualified prospects in front of your sales team every week, and make sure buyers who search for you on Google or AI assistants actually find you. Adawaty covers both, with Leads on Autopilot (first leads in 10 days) and Found Everywhere (first wins in 30 days).",
+      "url": "https://adawaty.net/blog/leads-on-autopilot-search-visibility",
+      "mainEntityOfPage": "https://adawaty.net/blog/leads-on-autopilot-search-visibility",
+      "inLanguage": "en",
+      "keywords": [
+        "B2B lead generation service",
+        "qualified B2B prospects every week",
+        "how to get found on Google and AI answers",
+        "search visibility for B2B companies",
+        "done-for-you lead list with buying signals"
+      ],
+      "author": {
+        "@id": "https://adawaty.net/#org"
+      },
+      "publisher": {
+        "@id": "https://adawaty.net/#org"
+      },
+      "about": {
+        "@type": "Service",
+        "name": "Leads on Autopilot",
+        "provider": {
+          "@id": "https://adawaty.net/#org"
+        }
+      }
+    },
+    {
+      "@type": "FAQPage",
+      "@id": "https://adawaty.net/blog/leads-on-autopilot-search-visibility#faq",
+      "mainEntity": [
+        {
+          "@type": "Question",
+          "name": "How fast will I get my first leads?",
+          "acceptedAnswer": {
+            "@type": "Answer",
+            "text": "With Leads on Autopilot, first leads arrive in 10 days."
+          }
+        },
+        {
+          "@type": "Question",
+          "name": "How much does Leads on Autopilot cost?",
+          "acceptedAnswer": {
+            "@type": "Answer",
+            "text": "$290 setup plus $390 per month, with a 3-month minimum."
+          }
+        },
+        {
+          "@type": "Question",
+          "name": "What is the difference between Leads on Autopilot and Found Everywhere?",
+          "acceptedAnswer": {
+            "@type": "Answer",
+            "text": "Leads on Autopilot brings qualified prospects to you every week. Found Everywhere makes you visible on Google and AI answers, with first wins in 30 days."
+          }
+        },
+        {
+          "@type": "Question",
+          "name": "Do you guarantee rankings?",
+          "acceptedAnswer": {
+            "@type": "Answer",
+            "text": "No. Our guarantee covers delivery dates and fixes, not rankings. You get a monthly report on rankings and AI-assistant citations."
+          }
+        },
+        {
+          "@type": "Question",
+          "name": "Can I combine both packages?",
+          "acceptedAnswer": {
+            "@type": "Answer",
+            "text": "Yes. Tell us your market on WhatsApp and we'll recommend where to start."
+          }
+        }
+      ]
+    },
+    {
+      "@type": "Organization",
+      "@id": "https://adawaty.net/#org",
+      "name": "Adawaty LLC",
+      "url": "https://adawaty.net/",
+      "email": "hello@adawaty.net",
+      "telephone": "+1-339-399-1355",
+      "address": [
+        {
+          "@type": "PostalAddress",
+          "streetAddress": "30 N Gould St Ste R",
+          "addressLocality": "Sheridan",
+          "addressRegion": "WY",
+          "postalCode": "82801",
+          "addressCountry": "US"
+        },
+        {
+          "@type": "PostalAddress",
+          "streetAddress": "Ivánska cesta 30/D, Aircraft Building",
+          "addressLocality": "Bratislava",
+          "postalCode": "821 04",
+          "addressCountry": "SK"
+        }
+      ],
+      "knowsLanguage": [
+        "en",
+        "ar"
+      ],
+      "areaServed": [
+        "United States",
+        "Europe",
+        "Middle East and North Africa"
+      ]
+    }
+  ]
+}
