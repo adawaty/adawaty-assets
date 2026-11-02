@@ -319,3 +319,6 @@ html[data-theme=dark] body .account-for-header .section-bg-wrapper.grey::before{
 html[data-theme=dark] body .account-for-header .section-bg-wrapper.grey h1{background:linear-gradient(180deg,#fff 40%,#B9C6FF);-webkit-background-clip:text;background-clip:text}
 html[data-theme=dark] body .account-for-header .section-bg-wrapper.grey p.subtitle{color:#A9B4C0!important}
 html[data-theme=dark] body .list-box .list .item-link{background:color-mix(in srgb,var(--foreground) 4%,var(--background))!important}
+/* v2.2.1: don't clip the country dropdown inside the contact banner */
+html body .section-bg-wrapper:has(form[data-form] .country-search),html body .section-container:has(form[data-form] .country-search){overflow:visible!important}
+html body [id]:has(> .container form[data-form] .country-search),html body .container:has(form[data-form] .country-search){position:relative;z-index:5}
