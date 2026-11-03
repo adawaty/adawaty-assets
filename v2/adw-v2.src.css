@@ -324,3 +324,4 @@ html body .section-bg-wrapper:has(form[data-form] .country-search),html body .se
 html body [id]:has(> .container form[data-form] .country-search),html body .container:has(form[data-form] .country-search){position:relative;z-index:5}
 /* v2.2.2 perf additions */
 html[data-theme=light] .card-header p.subtitle{opacity:1!important;color:#5c5c5c!important}html[data-theme=light] .card-text .description .adw-tl,html[data-theme=light] .card-text .description .adw-li{opacity:1!important;color:#5c5c5c!important}a.btn-1>button,a.btn-2>button{pointer-events:none}
+html[data-theme=light] .card-text .description p{opacity:1!important;color:#5c5c5c!important}a.top.has-button>button{pointer-events:none}
