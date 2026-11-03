@@ -258,3 +258,4 @@ if(d.readyState!="loading"){mount();setTimeout(start,90)}else{var eo=new Mutatio
 addEventListener("load",function(){setTimeout(mount,500);setTimeout(mount,2200)});addEventListener("popstate",sched);
 }catch(e){window.console&&console.warn("adw22",e)}})();
 /* v2.2.2 */
+(function(){var d=document,f=function(){if(d.querySelector("main,[role=main]"))return;var c=d.querySelector("body>.container");if(c)c.setAttribute("role","main")},g=function(){var p=0;d.querySelectorAll("h1,h2,h3,h4,h5,h6").forEach(function(h){if(!h.getClientRects().length)return;var l=+(h.getAttribute("aria-level")||h.tagName[1]);if(p&&l>p+1){l=p+1;h.setAttribute("aria-level",l)}p=l})};if(d.body)f();d.addEventListener("DOMContentLoaded",f);addEventListener("load",function(){setTimeout(g,300)})})();
