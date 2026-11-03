@@ -163,7 +163,7 @@ d.addEventListener("pointerout",function(e){if(!e.relatedTarget&&cur){reset(cur)
 
 var tm=0;function sched(){if(!tm)tm=setTimeout(function(){tm=0;mount()},120)}
 function start(){mount();try{new MutationObserver(sched).observe(d.body,{childList:true,subtree:true})}catch(e){}}
-if(d.readyState!="loading")setTimeout(start,60);else{var eo=new MutationObserver(function(){if(d.body)mount()});eo.observe(d.documentElement,{childList:true,subtree:true});d.addEventListener("DOMContentLoaded",function(){eo.disconnect();setTimeout(start,60)})}
+if(d.readyState!="loading"){mount();setTimeout(start,60)}else{var eo=new MutationObserver(function(){if(d.body)mount()});eo.observe(d.documentElement,{childList:true,subtree:true});d.addEventListener("DOMContentLoaded",function(){eo.disconnect();setTimeout(start,60)})}
 addEventListener("load",function(){setTimeout(mount,400);setTimeout(mount,2000)});addEventListener("popstate",sched);
 }catch(e){window.console&&console.warn("adw21",e)}})();
 /* Adawaty v2.2: how it starts, prove it, infographics, product mockups, who fits */
@@ -254,7 +254,7 @@ function mount(){try{var r=root(),p=path();C.forEach(function(c){var n=N[c.k];if
 if(r){swaps(r,p);timeline(r,p);if(p=="/")whofits(r)}ctas();}catch(e){W.console&&console.warn("adw22",e)}}
 var tm=0;function sched(){if(!tm)tm=setTimeout(function(){tm=0;mount()},150)}
 function start(){mount();try{new MutationObserver(sched).observe(d.body,{childList:true,subtree:true})}catch(e){}}
-if(d.readyState!="loading")setTimeout(start,90);else{var eo=new MutationObserver(function(){if(d.body)mount()});eo.observe(d.documentElement,{childList:true,subtree:true});d.addEventListener("DOMContentLoaded",function(){eo.disconnect();setTimeout(start,90)})}
+if(d.readyState!="loading"){mount();setTimeout(start,90)}else{var eo=new MutationObserver(function(){if(d.body)mount()});eo.observe(d.documentElement,{childList:true,subtree:true});d.addEventListener("DOMContentLoaded",function(){eo.disconnect();setTimeout(start,90)})}
 addEventListener("load",function(){setTimeout(mount,500);setTimeout(mount,2200)});addEventListener("popstate",sched);
 }catch(e){window.console&&console.warn("adw22",e)}})();
 /* v2.2.2 */
