@@ -150,7 +150,7 @@ var C=[
  at:function(r){var h=r.querySelector(":scope>.account-for-header")||(d.querySelector("h1")&&top(d.querySelector("h1"),r));return[h,1]}},
 {k:"ecoh",pg:"/",mk:eco,at:function(r){var h=byHead("h2",/^our products$/i)||(d.querySelector(".card h3")&&byHead(".card h3",/^adawaty campus$/i));return[h&&top(h,r),1]}},
 {k:"ecop",pg:"/products",mk:eco,at:function(r){var h=byHead("h2",/^adawaty bio$/i);if(h)return[top(h,r),1];var f=r.querySelector(":scope>.v_2-footer"),p=f&&f.previousElementSibling;while(p&&!p.classList.contains("box"))p=p.previousElementSibling;return[p,0]}},
-{k:"fs",pg:"/services",mk:function(){return finder(1)},at:function(r){var h=r.querySelector(":scope>.account-for-header");if(h)return[h,1];var x=byHead("h2",/^for schools/i);return[x&&top(x,r),0]}}];
+{k:"fs",pg:"/services",mk:function(){return finder(1)},at:function(r){var x=byHead("h2",/^for schools/i);if(x)return[top(x,r),1];return[r.querySelector(":scope>.account-for-header"),1]}}];
 function mount(){try{var r=root(),p=path();C.forEach(function(c){var n=N[c.k];if(c.pg!=p){if(n&&n.parentNode)n.parentNode.removeChild(n);return}if(!r)return;if(n&&n.isConnected)return;var a=c.at(r);if(a[0])put(get(c.k,c.mk),a[0],a[1])})}catch(e){W.console&&console.warn("adw21",e)}}
 
 /* ---------- 3D tilt on cards (pointer devices only, delegated so re-rendered cards keep it) ---------- */
